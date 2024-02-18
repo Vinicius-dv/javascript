@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Primeiros passos em Javascript</title>
+    
+    <style>
+        *{
+            font: normal 1.3em arial ,helvetica ,sans-serif;
+        }
+        body{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 95vw;
+            background-color: rgba(0, 183, 255, 0.432);
+            color: white;
+            
+            
+        }
+        h1{
+            text-align: center;
+            padding: 5px;
+            
+        }
+        p{
+            text-align: center;
+            font-size: 1.2em;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá,mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var n1 = Number(window.prompt('Dígite um número:'))
+        var n2 = Number(window.prompt('Digite outro número')) 
+        var s = n1+n2
+        window.prompt(`A soma entre ${n1} e ${n2} igual a ${s}`)
+
+    </script>
+    
+</body>
+</html>
+
+<!--Para transformar um number em uma String eu posso usar assim:
+    s.toString() ou posso fazer assim :
+
+    String(s)
+-->
