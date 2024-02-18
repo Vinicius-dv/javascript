@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <style>
+        #container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+          font-size: 1.3em;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          margin: auto;
+          background-color: green;
+          width: 400px;
+          height: 400px;
+        }
+        .filho{
+          
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div id="container" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()" >
+        interaja...
+    </div>
+
+    <script>
+
+      
+        function clicar() {
+            var a = window.document.getElementById('container')
+            a.innerHTML = 'clicou'
+            a.style.background = 'red'
+        }
+
+        function entrou(){
+            var e = window.document.getElementById('container')
+            e.innerHTML = 'Olá'
+            e.style.background = 'blue'
+        }
+
+        function sair(){
+            var s = window.document.getElementById('container')
+            s.innerHTML = 'Sair'
+            s.style.background = 'pink'
+        }
+    </script>
+</body>
+</html>
