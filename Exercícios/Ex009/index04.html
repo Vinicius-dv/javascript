@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+   Qual o seu País <input type="text" name="nac" id="nac">
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="nacionalidade">
+
+    </div>
+    <script>
+        function calcular (){
+            var pais = 'Brasil'
+            var nacionalidade = window.document.getElementById('nac')
+            var nacio = window.document.getElementById('nacionalidade')
+            var n = (nac.value)
+            nacio.innerHTML = `Vivendo em ${pais}`
+            if(n == 'Brasil'){
+                nacio.innerHTML += '<p>Você é brasileiro</p>'
+            } else{
+                nacio.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+    
+</body>
+</html>
