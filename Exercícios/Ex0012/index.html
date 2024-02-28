@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idades</title>
+    <style>
+        body{
+            background-color: rgb(107, 107, 241);
+        }
+        header h1{
+            text-align: center;
+            color: white;
+        }
+        section{
+            width: 500px;
+            height: 200px;
+            background-color: white;
+            border-radius: 8px;
+            margin: auto;
+        }
+        form{
+            padding: 20px;
+        }
+        .tam{
+            font-size: 1.1em;
+            padding: 15px;
+            font-weight: 400;
+            
+        }
+        .esp{
+            margin-top: 20px;
+        }
+        footer{
+            text-align: center;
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <form action="verificador" method="post" onclick="on">
+            <label for="anoi">Ano de nascimento</label>
+            <input type="number" name="ano" id="anoi"> <br>
+            <label for="Sexoi">Sexo :</label>
+            <input type="radio" name="sexo" id="isxmas">
+            <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="f">
+            <label for="isxfem">Feminino</label>
+            <br>
+            <input class="esp" type="submit" value="Enviar">
+        </form>
+        <h1 class="tam">Preencha os dados acima para ver o resultado!</h1>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+</body>
+</html>
