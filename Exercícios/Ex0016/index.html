@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font: normal 30px arial,helvetica,sans-serif;
+    
+}
+body{
+    background-color: rgb(107, 107, 241);
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.465);
+}
+div{
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+div p {
+    font-size: 25px;
+    margin: 5px;
+}
+label{
+    font-size: 25px;
+    
+}
+input{
+    margin-top: 10px;
+    height: 27px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#cont{
+    font-size: 20px;
+    width: 100px;
+}
+#Respo{
+    font-size: 23px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+       
+        <div id="dados">
+            <p>
+                <label for="n1">Início:</label>
+                <input type="number" name="nu" id="n1">
+            </p>
+            <p>
+                <label for="n2">Fim:</label>
+                <input type="number" name="num" id="n2">
+            </p>
+            <p>
+                <label for="n3">Passo:</label>
+                <input type="number" name="nume" id="n3">
+            </p>
+            <p>
+                <input id="cont" type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        
+        <div id="Respo">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--<label for="n1">Início:</label>
+<input type="number" name="nu" id="n1">
+
+<label for="n2">Fim:</label>
+<input type="number" name="num" id="n2">
+
+<label for="n3">Passo:</label>
+<input type="number" name="nume" id="n3">
+
+<button>Contar</button>
