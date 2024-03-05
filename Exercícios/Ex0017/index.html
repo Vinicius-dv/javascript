@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+                *{
+    margin: 0px;
+    padding: 0px;
+    font: normal 30px arial,helvetica,sans-serif;
+    
+}
+body{
+    background-color: rgb(107, 107, 241);
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.465);
+}
+div{
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+div p {
+    font-size: 25px;
+    margin: 5px;
+}
+label{
+    font-size: 20px;
+    
+}
+input{
+    margin-top: 10px;
+    height: 27px;
+    width: 250px;
+    font-size: 20px;
+}
+.float{
+    float: right;
+   
+}
+#tabu{
+    height: 200px;
+    width: 250px;
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    font-style: italic;
+}
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos aprender a tabuada ?</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="num">Número:</label>
+            <input type="number" name="inum" id="num">
+            <input class="float" type="button" value="Gerar tabuada" onclick="verificar()">
+        </div>
+
+        <div id="res">
+       <select name="tabu" id="tabu"></select>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="meuscript.js"></script>
+</body>
+</html>
