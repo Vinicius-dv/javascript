@@ -1,6 +1,6 @@
 function verificar(){
     var n1 = document.getElementById('num')
-    var res = window.document.getElementById('tabu')
+    var res = window.document.getElementById('res')
     if(n1.value.length == 0 || n1.value == 0 || n1.value>10 ){
         window.alert('[ERRO] verifique os dados e tente novamente')
     } else{
