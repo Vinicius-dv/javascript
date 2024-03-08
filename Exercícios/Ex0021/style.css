@@ -1,0 +1,41 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-laranja{
+    background-color: rgb(243, 173 , 43);
+    color: white;
+    transition: all 0.25s ease-in-out;
+    
+}
+.btn-vermelho{
+    background-color: rgb(175, 40 ,40 );
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+.btn-roxo{
+    background-color: rgb(109, 29 , 109);
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+button{
+    padding: 5px 10px ;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 10px;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 90vw;
+    text-align: center;
+}
