@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos</title>
+    <script src="meuscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vamos calcular</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="n1">Valor 1 :</label>
+            <input type="number" name="in1" id="n1">
+            <label for="n2">Valor 2 :</label>
+            <input type="number" name="in2" id="n2">
+           
+
+            <p>Opções</p>
+        </div>
+
+        <div >
+
+            <input type="radio" name="calc" id="soma" value="soma">
+            <label for="soma">Soma</label>
+            <br>
+            <input type="radio" name="calc" id="sub" value="sub">
+            <label for="sub">Subtração</label>
+            <br>
+            <input type="radio" name="calc" id="mult" value="mult">
+            <label for="mult">Multiplicação</label>
+            <br>
+            <input type="radio" name="calc" id="div" value="div">
+            <label for="div">Divisão</label>
+            <br>
+            <label for="res">Resultado:</label>
+            <input type="text" name="ite" id="res" >
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </section>
+</body>
+</html>
