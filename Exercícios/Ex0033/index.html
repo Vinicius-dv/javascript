@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <script>
+        var fruta = ['laranja', 'maça', 'pera', 'banana', 'morango'];
+
+        var lista = document.createElement('ul');
+
+        var corpo = document.getElementsByTagName('body')[0];
+
+        corpo.appendChild(lista);
+
+        var lista2 = document.getElementsByTagName('ul');
+
+        console.log(lista2[0]);
+
+        for (var i = 0; i < fruta.length; i++) {
+            var li = document.createElement('li');
+            var textoli = document.createTextNode(fruta[i]);
+            li.appendChild(textoli);
+            
+            lista2[0].appendChild(li)
+        }
+    </script>
+</body>
+</html>
