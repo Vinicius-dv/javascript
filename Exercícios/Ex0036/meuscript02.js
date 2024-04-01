@@ -19,7 +19,7 @@ console.log(trim)
 
 let tags = 'PHP , Javascript , Python , Java'
 
-console.log(tags.split(', '))
+ console.log(tags.split(', '))
 
 
 
