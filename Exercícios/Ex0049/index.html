@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alterando css pelo javascript</title>
+    
+</head>
+<body>
+    <h1 id="titulo">titulo principa</h1>
+    <h2 id="titulo2">Este é o segundo titulo</h2>
+   
+   <p id="p">Estes é o paragrafo</p>
+   
+   <ul id="lista">
+          <li class="item">item 1</li>
+          <li class="item">item 2</li>
+          <li class="item">item 3</li>
+          <li class="item">item 4</li>
+   </ul>
+   <div id="conteudo">
+       <p id="remover">remova isto</p>
+       <button id="btn" onclick="clicou()">Clique no botão para mudar a cor de fundo</button>
+   </div>
+   <script>
+    var color = false 
+
+    function clicou(){
+        let body = document.body
+        if(color){
+            body.style.backgroundColor = '' // se não tiver nenhuma cor de fundo ele me retorna a cor original
+            color = false
+        } else{
+            body.style.backgroundColor ='red'
+            color = true
+        }
+    }
+   </script>
+</body>
+</html>
