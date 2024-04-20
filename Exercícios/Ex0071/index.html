@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de stopPropagation()</title>
+<style>
+  .parent {
+    padding: 20px;
+    background-color: lightblue;
+  }
+  .child {
+    padding: 10px;
+    background-color: lightgreen;
+  }
+</style>
+</head>
+<body>
+
+<div class="parent" id="parent">
+  <div class="child" id="child">
+    <button id="button">Clique aqui!</button>
+  </div>
+</div>
+
+<script>
+document.getElementById('button').addEventListener('click', function(event) {
+  console.log('Manipulador de evento do botão acionado.');
+  event.stopPropagation(); // Impede a propagação do evento para elementos pais
+});
+
+document.getElementById('child').addEventListener('click', function(event) {
+  console.log('Manipulador de evento do elemento filho acionado.');
+  event.stopPropagation()
+});
+
+document.getElementById('parent').addEventListener('click', function(event) {
+  console.log('Manipulador de evento do elemento pai acionado.');
+});
+</script>
+
+</body>
+</html>
