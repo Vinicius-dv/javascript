@@ -8,7 +8,7 @@ p_array.innerHTML = '['+elementos_array+']'
 // o resultado vai ser 15 pq 15 é a redução do array pq eu pedi a soma 
 btnRdeuzir.addEventListener('click', (evento)=>{
     resultado.textContent = elementos_array.reduce((anterior,atual,pos)=>{
-        aux += atual*2
+        aux += anterior
         return atual+anterior
     })
 })
