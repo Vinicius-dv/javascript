@@ -1,0 +1,3 @@
+class carro{ // classe pai 
+
+}
