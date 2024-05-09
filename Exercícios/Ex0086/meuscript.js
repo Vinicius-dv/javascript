@@ -8,6 +8,7 @@ const res = document.getElementById('tigual')
 
 
 let sinal = false
+let decimal = false
 console.log(teclasNum)
 console.log(teclasOp)
 
@@ -15,7 +16,24 @@ console.log(teclasOp)
 teclasNum.forEach((el)=>{
     el.addEventListener('click',(event)=>{
         sinal = false
-        display.innerHTML += event.target.innerHTML
+      
+        if(event.target.innerHTML == ','){
+           if(!decimal){
+            decimal = true 
+            if(display.innerHTML == '0'){
+                display.innerHTML  = '0,'
+            }else{
+                display.innerHTML += event.target.innerHTML
+            }
+           }
+        }else{
+            if( display.innerHTML =='0'){
+                display.innerHTML = ''
+                
+            }
+            display.innerHTML += event.target.innerHTML
+           }
+        
     })
 })
 teclasOp.forEach((el)=>{
@@ -39,9 +57,19 @@ teclasOp.forEach((el)=>{
     })
 })
 
+
+
 tLimpar.addEventListener('click',(event)=>{
    sinal = false
+   decimal = false
     display.innerHTML = ''
+})
+
+res.addEventListener('click',()=>{
+    sinal = false
+   decimal = false
+    const result = eval(display.innerHTML)
+    display.innerHTML = result
 })
 
 
