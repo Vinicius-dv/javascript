@@ -23,8 +23,10 @@ teclasNum.forEach((el)=>{
            if(!decimal){
             decimal = true 
             if(display.innerHTML == '0'){
-                display.innerHTML  = '0,'
-            }else{
+                display.innerHTML  = '0.'
+            }
+           
+            else{
                 display.innerHTML += event.target.innerHTML
             }
            }
@@ -49,7 +51,12 @@ teclasOp.forEach((el)=>{
             }
             if(event.target.innerHTML == 'x'){
                 display.innerHTML += '*'
-            } else{
+            }
+            if(event.target.innerHTML == ','){
+                display.innerHTML += '.'
+            }
+    
+            else{
                 display.innerHTML += event.target.innerHTML
             }
             
