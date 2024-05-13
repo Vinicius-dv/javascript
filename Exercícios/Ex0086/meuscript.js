@@ -7,12 +7,25 @@ const tLimpar = document.getElementById('tlimpar')
 const res = document.getElementById('tigual')
 const tcpy = document.getElementById('tcpy')
 const teste = document.getElementById('teste')
+const aba_gaveta = document.getElementById('aba_gaveta')
+const calc = document.getElementById('calc')
 
-
+let calculadoraVisivel = false
 let sinal = false
 let decimal = false
 console.log(teclasNum)
 console.log(teclasOp)
+
+aba_gaveta.addEventListener('click',()=>{
+    if (!calculadoraVisivel) {
+        calc.style.left = '0px'
+    } else {
+        calc.style.left = '-260px'
+    }
+    calculadoraVisivel = !calculadoraVisivel
+   
+    
+})
 
 // para cada elemento ou tecla clicada eu preciso adicionar no display , no lugar de 0 
 teclasNum.forEach((el)=>{
