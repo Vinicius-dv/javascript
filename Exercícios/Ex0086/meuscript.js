@@ -5,6 +5,8 @@ const display = document.getElementById('display')
 const tOn = document.getElementById('ton')
 const tLimpar = document.getElementById('tlimpar')
 const res = document.getElementById('tigual')
+const tcpy = document.getElementById('tcpy')
+const teste = document.getElementById('teste')
 
 
 let sinal = false
@@ -70,6 +72,12 @@ res.addEventListener('click',()=>{
    decimal = false
     const result = eval(display.innerHTML)
     display.innerHTML = result
+})
+
+
+tcpy.addEventListener('click',(event)=>{
+    //navigator.clipboard.writeText(display.innerHTML)
+    navigator.clipboard.writeText(display.innerHTML)
 })
 
 
