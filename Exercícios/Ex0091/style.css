@@ -1,0 +1,26 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.olhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 100px;
+    
+}
+.olho{
+    width: 400px;
+    height: 200px;
+    transform-origin: center center;
+    margin-right: 20px;
+}
+
+.olho img {
+    width: 100%; 
+    height: auto; 
+}
