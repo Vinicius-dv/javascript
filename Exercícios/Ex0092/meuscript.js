@@ -27,16 +27,32 @@ class Bola{
         this.desenhar()
         this.controle = setInterval(this.controlar,10)
         this.eu =  document.getElementById(this.id)
+        numBola++
+        num_objetos = numBola
 
 }
-minhaPos = () =>{
 
+//de forma mais direta, this.arrayBolas.indexOf(this) passa a posição da instância da bola para o array arrayBolas
+minhaPos = () =>{
+    return this.arrayBolas.indexOf(this)
 }
 removerBola = ()=>{
-
+    clearInterval(this.controle)
+    bolas = bolas.filter((b)=>{
+        if(b.id != this.id){
+            return b
+        }
+    })
+    this.eu.remove()
+    numBola--
+    num_objetos = numBola
 }
 desenhar = ()=>{
-
+    const div = document.createElement('div')
+    div.setAttribute('id',this.id)
+    div.setAttribute('class','bola')
+    div.setAttribute('style',`left:${this.px}; top:${this.py}; ${this.tam};heigth:${this.tam};background-color: rgb(${this.r},${this.g},${this.b})`)
+    this.palco.appendChild(div)
 }
 controlar = () =>{
 
@@ -53,3 +69,4 @@ btn_add.addEventListener('click',(evt)=>{
 btn_remover.addEventListener('click',(evt)=>{
     bolas.length = 0
 })
+
