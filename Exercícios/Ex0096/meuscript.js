@@ -11,6 +11,7 @@ btn_inprimir.addEventListener('click',(evt)=>{
 
    const win = window.open('', '', 'height=700,width=700');
 
+
    win.document.write('<html><head>');
    win.document.write('<title>CFB Cursos</title>');
    win.document.write(estilo);
