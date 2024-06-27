@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Cor de fundo para visualização */
+            font-family: Arial, sans-serif; /* Definindo uma fonte */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da viewport */
+        }
+        .container {
+            position: relative;
+            width: 100vw; /* Largura total da viewport */
+            height: 100vh; /* Altura total da viewport */
+            background-image: url("Imagens/REPOR ESTOQUE.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 40px; /* Espaçamento interno */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        .logo {
+            width: 250px; /* Ajuste o tamanho conforme necessário */
+            margin-bottom: 20px; /* Margem inferior */
+        }
+        .texto {
+            color: rgb(9, 9, 127);
+            font-weight: bolder;
+            margin-top: -10px; /* Margem superior */
+            margin-bottom: 30px; /* Margem inferior */
+        }
+        .imagens {
+            display: flex;
+            align-items: center;
+            margin-top: -20px; /* Espaço acima das imagens */
+            margin-bottom: 10px; /* Espaço abaixo das imagens */
+        }
+        .imagens img {
+            margin-right: 20px; /* Espaço à direita das imagens */
+            max-width: 100px; /* Largura máxima das imagens */
+            height: auto; /* Altura ajustável conforme a largura */
+        }
+        .kit-coluna {
+            margin-top: -5px; /* Espaçamento acima da imagem */
+            max-width: 100px; /* Largura máxima da imagem */
+            height: 60px; /* Altura ajustável conforme a largura */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Imagens/LOGO-hortron.png" class="logo" alt="">
+        <div class="texto">
+            <p>VAMOS</p>
+            <p>REPOR SEU ESTOQUE?</p>
+        </div>
+        <div class="imagens">
+            <img src="Imagens/laminas.png" alt="">
+            <img src="Imagens/Equipo.png" alt="">
+        </div>
+        <img src="Imagens/kit-coluna.png" class="kit-coluna" alt="">
+    </div>
+</body>
+</html>
