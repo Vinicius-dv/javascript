@@ -5,10 +5,9 @@ const posy = document.getElementById('posy')
 const largura = document.getElementById('largura')
 const altura = document.getElementById('altura')
 
-let Domrect_q1 = q1.getBoundingClientRect()
-let Domrect_q2 = q2.getBoundingClientRect()
 
 q1.addEventListener('click',()=>{
+    let Domrect_q1 = q1.getBoundingClientRect()
     posx.innerHTML = `Posx:${Domrect_q1.x}`
     posy.innerHTML = `Posy:${Math.floor(Domrect_q1.y)}`
     largura.innerHTML = `Largura:${Domrect_q1.width}`
@@ -18,6 +17,7 @@ q1.addEventListener('click',()=>{
 
 
 q2.addEventListener('click',()=>{
+    let Domrect_q2 = q2.getBoundingClientRect()
     posx.innerHTML = `Posx:${Domrect_q2.x}`
     posy.innerHTML = `Posy:${Math.floor(Domrect_q2.y)}`
     largura.innerHTML = `Largura:${Domrect_q2.width}`
