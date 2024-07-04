@@ -6,12 +6,20 @@ const largura = document.getElementById('largura')
 const altura = document.getElementById('altura')
 
 
+q1.accessKey = 'b'
+q2.accessKey = 'n'
+
+console.log('q1:' +q1.accessKey)
+console.log('q2:' +q2.accessKey)
+
+
 q1.addEventListener('click',()=>{
     let Domrect_q1 = q1.getBoundingClientRect()
     posx.innerHTML = `Posx:${Domrect_q1.x}`
     posy.innerHTML = `Posy:${Math.floor(Domrect_q1.y)}`
     largura.innerHTML = `Largura:${Domrect_q1.width}`
     altura.innerHTML = `Altura:${Domrect_q1.height}`
+    
 
 })
 
