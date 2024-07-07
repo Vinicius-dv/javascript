@@ -41,6 +41,48 @@
            
         </div>
     </header>
-    <script src="meuscript.js"></script>
+
+    <main>
+        <section class="home">
+            <div class="home-img">
+                <img src="imagens/product1.png" class="one">
+            </div>
+
+            <div class="home-text">
+                <h1>Wireless <br> Headphones</h1>
+                <h5>The smarter way to listen</h5>
+                <h3>$199.00</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <div class="main">
+            <div class="row">
+                <li>
+                    <img src="imagens/main1.png" onclick="slider('imagens/product1.png')" alt="">
+                </li>
+            </div>
+
+            <div class="row2">
+                <li>
+                    <img src="imagens/main2.png" onclick="slider('imagens/product2.png')" alt="">
+                </li>
+            </div>
+
+            <div class="row3">
+                <li>
+                    <img src="imagens/main3.png" onclick="slider('imagens/product3.png')" alt="">
+                </li>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function slider(imagem){
+            document.querySelector('.one').src = imagem
+        }
+    </script>
+
 </body>
 </html>
