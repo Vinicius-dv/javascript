@@ -25,6 +25,10 @@ segunda_função()*/
 
 // Pratico 
 
+//Aqui eu estou fazendo uma requisição para a url e estou passando o id 3 que defini la em baixo em showUsername , 
+//ent eu vou fazer uma requisição no id 3 e com isso essa url ira me retornar os dados do usuario com o id 3,
+//transformara em um obj json após a requisição me retornar os dados do usuario ja em um obj json eu armazeno na minha const user
+//e após ela resolver a promise que é os dados do usuario eu mando no console.log exibir o nome do usuario com o id 3.
 function getUser(id){
 
     return fetch(`https://reqres.in/api/users?id= ${id}`)
