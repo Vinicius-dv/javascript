@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .canvas{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="canvas">
+
+    <canvas id="grafico1" style="width: 300px; height: 300px;"></canvas>
     <script src="meuscript.js"></script>
+
+    <script>
+        const ctx = document.getElementById('grafico1');
+        let labelx = ['Brasil','USA','china','russia']
+        let numerosx = [20,15,18,13]
+        new Chart(ctx, {
+
+          type: 'bar',
+          data: {
+            labels: labelx,
+            datasets: [{
+              label: '# of Votes',
+              data: numerosx,
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+</div>
 </body>
 </html>

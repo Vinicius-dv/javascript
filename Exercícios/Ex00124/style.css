@@ -1,0 +1,39 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#divtimer{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#timer{
+
+    background-color: #333;
+    color: #0f0;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 250px;
+    border: 5px solid #888;
+}
+
+#botões{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #ccc;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
