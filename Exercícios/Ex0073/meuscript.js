@@ -5,6 +5,7 @@ const cursos = ['HTML','CSS' ,'javascript','PHP','react','MySQL','ReactNative']
 const btnCursosselecionados = document.getElementById('btn-cursoSelecionado')
 
 cursos.map( (el,chave )=>{
+    console.log(el)
     const novoElemento = document.createElement('div')
     novoElemento.setAttribute('id','c'+chave)
     novoElemento.setAttribute('class' ,'curso c1')

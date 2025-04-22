@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg id="motorSvg" width="600" height="400" viewBox="0 0 600 400">
+        <!-- Cabeçote -->
+        <rect x="100" y="100" width="200" height="50" fill="gray" id="cabecote" />
+        <!-- Buracos dos cilindros -->
+        <circle cx="150" cy="120" r="10" fill="black" id="cilindro1" />
+        <circle cx="250" cy="120" r="10" fill="black" id="cilindro2" />
+      
+        <!-- Pistão -->
+        <rect x="120" y="170" width="40" height="80" fill="silver" id="pistao" />
+      
+        <!-- Virabrequim -->
+        <rect x="120" y="270" width="200" height="30" fill="darkgray" id="virabrequim" />
+    </svg>
+    
+    <button id="startButton">Ligar Motor</button>
+    
+    <script>
+        const cabecote = document.getElementById('cabecote');
+const cilindro1 = document.getElementById('cilindro1');
+const cilindro2 = document.getElementById('cilindro2');
+const pistao = document.getElementById('pistao');
+const virabrequim = document.getElementById('virabrequim');
+
+// Estado do motor
+let motorLigado = false;
+
+// Função para "ligar" o motor e animar os pistões e virabrequim
+function ligarMotor() {
+    motorLigado = true;
+    animarMotor();
+}
+
+// Função para animar o motor
+function animarMotor() {
+    if (motorLigado) {
+        // Move o pistão para simular o funcionamento
+        let posicaoPistao = 170;
+        let movendoParaBaixo = true;
+
+        setInterval(() => {
+            // Move o pistão para cima e para baixo
+            if (movendoParaBaixo) {
+                posicaoPistao += 10;
+                if (posicaoPistao >= 250) movendoParaBaixo = false;
+            } else {
+                posicaoPistao -= 10;
+                if (posicaoPistao <= 170) movendoParaBaixo = true;
+            }
+            pistao.setAttribute("y", posicaoPistao);
+            
+            // Gira o virabrequim
+            virabrequim.setAttribute("transform", `rotate(${posicaoPistao}, 220, 300)`); // Rotaciona o virabrequim com base na posição do pistão
+        }, 100);
+    }
+}   
+    document.getElementById('startButton').addEventListener('click', ligarMotor)
+    </script>
+</body>
+</html>

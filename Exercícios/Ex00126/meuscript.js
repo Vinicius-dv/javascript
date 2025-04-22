@@ -4,6 +4,7 @@ const config = {
     cor : '#48f'
 }
 
+
 const cxmsg = new msg(config)
 
 const btn_msg = document.getElementById('btn_msg')
