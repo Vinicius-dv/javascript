@@ -1,4 +1,4 @@
-let n_clicada = 4
+let n_clicada = 12
 function receber_valores(n,arr_n){
     if(n%2==0){
         console.log(0)
@@ -8,7 +8,7 @@ function receber_valores(n,arr_n){
     let lam_02 = arr_n.filter(item=>item === 2).length
     console.log(lam_02%2==0?'0':'1')
 }
-receber_valores(n_clicada,[2,1,2,2])
+receber_valores(n_clicada,[1,2,2])
 
     //let lampada_b = false 
     /*for(let i =0;i<arr_n.length;i++){
